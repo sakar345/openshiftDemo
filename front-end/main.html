@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Front-End</title>
+   
+</head>
+
+<body>
+  
+    <form id="connectionForm">
+      <h1>OpenShift Example</h1>
+
+      Database IP:<br>
+      <input type="text" id="dbIP"><br>
+      Database Port:<br>
+      <input type="text" id="dbPort"><br>
+      Node Server IP:<br>
+      <input type="text" id="serverIP">
+      <button type="button" id="connectButton">CONNECT</button>
+    </form>
+
+    
+    <form id= "databaseForm">
+        <h1>Database</h1>
+        
+        <div class="create">
+          Create Table:
+          <button type=button id="createTable">Create Table</button> <br>
+        </div>
+        
+        <div class="delete">
+          Delete Table:
+          <button type=button id="deleteTable">Delete Table</button> <br><br>
+        </div>
+
+        Insert Row <br>
+        Name:
+        <input type="text" id="name"> <br>
+        Address:
+        <input type="text" id="address"> <br> 
+        <button type="button" id="insertButton">Insert</button>
+    </form>
+</body>
+
+</html>
